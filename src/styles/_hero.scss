@@ -1,3 +1,5 @@
+@use 'variables';
+
 .hero {
     background-image: url(../images/imagem_fundo_hero.jpeg);
     background-size: cover;
@@ -7,6 +9,16 @@
     color: #fff;
     text-align: center;
     position: relative;
+
+    @media (max-width: 1023px) {
+        background-position: top;
+    }
+
+    @media (max-width: 640px) {
+        background-position: top;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 
     .container {
         position: relative;
@@ -37,8 +49,30 @@
         color: #fff;
         letter-spacing: 1px;
 
+        span {
+            margin: 0;
+            font-size: 40px;
+
+            @media (max-width: 640px) {
+                font-size: 28px;
+            }
+        }
+
         @media (max-width: 640px) {
-            font-size: 18px;
+            font-size: 22px;
+        }
+    }
+
+    #contador {
+        display: block;
+        margin: 24px 0;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+        @media (max-width: 640px) {
+            font-size: 28px;
+            margin: 40px 0 24px 0;
         }
     }
 
@@ -51,12 +85,12 @@
         text-align: center;
         letter-spacing: 1px;
         color: #fff;
-        background-color: #d20a0a;
-        border-bottom: 2px solid #d20a0a;
+        background-color: variables.$corBotao;
+        border-bottom: 2px solid variables.$corBotao;
         transition: all 0.3s ease;
 
         &:hover {
-            background-color: darken(#d20a0a, 5%);
+            background-color: darken(variables.$corBotao, 5%);
             border-color: #fff;
         }
 

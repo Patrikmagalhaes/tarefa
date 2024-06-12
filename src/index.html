@@ -8,12 +8,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/main.scss">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     </head>
     <body>
         <header class="hero">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <img class="hero__logo" src="./images/ufc-logo.png" alt="UFC logo">
-                <p class="hero__text">O maior evento de lutas do mundo está de volta ao Brasil dentro de <span id="contador"></span></p>
+                <p class="hero__text">O maior evento de lutas do mundo está de volta ao <span>Brasil</span></p>
+                <span id="contador"></span>
                 <a href="#" class="hero__button">
                     Comprar Ingresso
                 </a>
@@ -24,6 +27,30 @@
             </div>
         </header>
 
+        <section class="event">
+            <div class="container" data-aos="fade-right">
+                <div class="event__text">
+                    <h2 class="event__text__title">Como será</h2>
+                    <p class="event__text__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vitae eum atque. Repellat, quis. Alias fuga, cum, qui perferendis tenetur id obcaecati distinctio voluptatem ab quos sit laboriosam odio amet?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab magnam voluptate provident. Exercitationem nisi similique voluptate modi, soluta ea hic debitis sed, vitae praesentium reiciendis est, minima eveniet facere ad.
+                    </p>
+                </div>
+                <img class="event__image" src="./images/imagem_ufc_brasil.webp" alt="ufc Brasil com Bandeira">
+            </div>
+        </section>
+        <section class="event event__reverse--section">
+            <div class="container" data-aos="fade-left">
+                <div class="event__text">
+                    <h2 class="event__text__title">Como será</h2>
+                    <p class="event__text__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vitae eum atque. Repellat, quis. Alias fuga, cum, qui perferendis tenetur id obcaecati distinctio voluptatem ab quos sit laboriosam odio amet?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab magnam voluptate provident. Exercitationem nisi similique voluptate modi, soluta ea hic debitis sed, vitae praesentium reiciendis est, minima eveniet facere ad.
+                    </p>
+                </div>
+                <img class="event__image" src="./images/imagem_ufc_bandeira.jpg" alt="ufc Brasil">
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="./scripts/main.js"></script>
     </body>
     </html>

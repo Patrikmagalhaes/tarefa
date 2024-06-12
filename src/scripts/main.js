@@ -1,3 +1,5 @@
+AOS.init();
+
 const dataEvento = new Date("jan 01, 2025 23:00:00");
 const timeStampEvento = dataEvento.getTime();
 
@@ -16,7 +18,7 @@ const contador = setInterval( function() {
     const minutosAteEvento = Math.floor(distanciaAteEvento % horasEmMs / minutosEmMs);
     const segundosAteEvento = Math.floor(distanciaAteEvento % minutosEmMs / 1000);
 
-    document.getElementById('contador').innerHTML = `${diasAteEvento}d ${horasAteEvento}h ${minutosAteEvento}m ${segundosAteEvento}s`;
+    document.getElementById('contador').innerHTML = `Faltam ${diasAteEvento}d ${horasAteEvento}h ${minutosAteEvento}m ${segundosAteEvento}s`;
 
     if (distanciaAteEvento < 0) {
         clearInterval(contador);

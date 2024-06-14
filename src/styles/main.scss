@@ -1,6 +1,8 @@
 @use 'variables';
 @use 'hero';
 @use 'event';
+@use 'streaming';
+@use 'benefits';
 
 * {
     padding: 0;
@@ -36,4 +38,49 @@
 .contador--expired {
     color: red;
     text-decoration: line-through;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 16px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: variables.$corBotao;
+    border-bottom: 2px solid variables.$corBotao;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken(variables.$corBotao, 5%);
+        border-color: #fff;
+    }
+
+    @media (max-width: 640px) {
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+
+.button--streaming {
+    display: inline-block;
+    padding: 12px 16px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: all 0.3s ease;
+    background-color: variables.$corBotao;
+    border: 2px solid variables.$corBotao;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: #fff;
+        color: variables.$corBotao;
+    }
 }

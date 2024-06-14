@@ -76,30 +76,6 @@
         }
     }
 
-    &__button {
-        display: inline-block;
-        padding: 12px 16px;
-        font-size: 20px;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 1px;
-        color: #fff;
-        background-color: variables.$corBotao;
-        border-bottom: 2px solid variables.$corBotao;
-        transition: all 0.3s ease;
-
-        &:hover {
-            background-color: darken(variables.$corBotao, 5%);
-            border-color: #fff;
-        }
-
-        @media (max-width: 640px) {
-            padding: 16px;
-            font-size: 16px;
-        }
-    }
-
     &__date {
         display: flex;
         justify-content: center;

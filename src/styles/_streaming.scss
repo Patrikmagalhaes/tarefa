@@ -1,0 +1,44 @@
+@use 'variables';
+
+.streaming {
+    padding: 64px 0;
+    text-align: center;
+
+    &__title {
+        color: variables.$corBotao;
+    }
+
+    &__subtitle {
+        margin: 24px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+        &__item {
+            border: 4px solid variables.$corBotao;
+            border-radius: 8px;
+            padding: 32px;
+
+            &:last-child {
+                border: 4px solid variables.$corText;
+            }
+
+            h3 {
+                padding-bottom: 32px;
+            }
+
+            strong {
+                font-size: 60px;
+                color: green;
+            }
+
+            p {
+                padding: 32px 0;
+                color: variables.$corText;
+            }
+        }
+    }
+}

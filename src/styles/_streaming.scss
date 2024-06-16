@@ -6,10 +6,13 @@
 
     &__title {
         color: variables.$corBotao;
+        font-size: 28px;
     }
 
     &__subtitle {
         margin: 24px 0;
+        color: #000;
+        font-weight: bold;
 
         @media (max-width: 640px) {
             margin: 32px 0;
@@ -45,11 +48,21 @@
             strong {
                 font-size: 60px;
                 color: green;
+
+                @media (max-width: 640px) {
+                    font-size: 40px;
+                }
             }
 
             p {
                 padding: 32px 0;
-                color: variables.$corText;
+                color: #000;
+                font-weight: 500;
+                letter-spacing: 1px;
+
+                @media (max-width: 640px) {
+                    font-size: 12px;
+                }
             }
         }
     }
